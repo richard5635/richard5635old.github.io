@@ -1,0 +1,8 @@
+body {
+    background-color: #222222;
+    color: white;
+}
+
+.jumbotron {
+    background-color: rgba(10, 10, 10, 0.205);
+}
