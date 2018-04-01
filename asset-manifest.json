@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.c7704a76.css",
   "main.css.map": "static/css/main.c7704a76.css.map",
-  "main.js": "static/js/main.de2ec279.js",
-  "main.js.map": "static/js/main.de2ec279.js.map",
+  "main.js": "static/js/main.fdd9e2d8.js",
+  "main.js.map": "static/js/main.fdd9e2d8.js.map",
   "static/media/01.jpg": "static/media/01.6bbb9293.jpg",
   "static/media/02.jpg": "static/media/02.a866b80b.jpg",
   "static/media/Resume.pdf": "static/media/Resume.b0ee19a8.pdf",
@@ -18,6 +18,7 @@
   "static/media/work03_thumbnail.jpg": "static/media/work03_thumbnail.0788cff8.jpg",
   "static/media/work04_thumbnail.jpg": "static/media/work04_thumbnail.2b60f41a.jpg",
   "static/media/work05_thumbnail.jpg": "static/media/work05_thumbnail.5aea5654.jpg",
-  "static/media/work06_thumbnail.jpg": "static/media/work06_thumbnail.d672361c.jpg",
-  "static/media/work07_thumbnail.jpg": "static/media/work07_thumbnail.331cba78.jpg"
+  "static/media/work06_thumbnail.jpg": "static/media/work06_thumbnail.84171878.jpg",
+  "static/media/work07_thumbnail.jpg": "static/media/work07_thumbnail.331cba78.jpg",
+  "static/media/work08_thumbnail.jpg": "static/media/work08_thumbnail.14b27c0d.jpg"
 }
