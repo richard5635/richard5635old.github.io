@@ -1,0 +1,7 @@
+
+.cache/000f7fc6198dd4fa6a746097dd4ec4a0.json
+.cache/*.json
+.cache
+node_modules/.cache/babel-loader
+node_modules
+_backup
