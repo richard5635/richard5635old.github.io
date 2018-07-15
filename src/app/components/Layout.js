@@ -3,27 +3,28 @@ import styled from 'styled-components';
 
 //Reference: https://www.w3schools.com/css/css_rwd_images.asp
 
-export const ContentWrapper = styled.div`
-    padding-top: 58px;
-    padding-bottom: 32px;
-    justify-content:center;
-    width:100%;
-`
-
-export const SubContentWrapper = styled.div`
-    padding-top: 32px;
-    width:calc(100% - 48px);
+export const Wrapper = styled.div`
+    width:calc(100%);
     margin-left:auto;
     margin-right:auto;
 
     @media (min-width: 768px) {
-        width:calc(100% - 64px);
+        width:calc(100% - 32px);
   }
 
     @media (min-width: 992px) {
     
         width: calc(992px - 64px);
   }
+`
+export const ContentWrapper = styled.div `
+  padding-top: 32px;
+  padding-bottom: 0px;
+`
+
+export const SubContentWrapper = styled.div`
+  padding-right: 16px;
+  padding-left: 16px;
 `
 
 export const HeaderImage = styled.img`

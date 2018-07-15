@@ -11,8 +11,16 @@ import portf05 from '../images/work05_thumbnail.jpg';
 import portf06 from '../images/work06_thumbnail.jpg';
 import portf07 from '../images/work07_thumbnail.jpg';
 import portf08 from '../images/work08_thumbnail.jpg';
+import portf09 from '../images/work09_thumbnail.jpg';
 
 export default [
+    {
+        name: 'I Incubate',
+        info: 'University Exhibition',
+        img: portf09,
+        alt: '',
+        codeLink: 'portfolio/09'
+    },
     {
         name: 'LevioPole',
         info: 'Research Student Project',
@@ -39,13 +47,6 @@ export default [
         info: 'High School Project',
         img: invcard,
         alt: '',
-        codeLink: ''
-    },
-    {
-        name: 'Video Contest',
-        info: 'Won the highest vote in High School',
-        img: portf02,    
-        alt: 'Environmindful',
-        codeLink: "https://www.youtube.com/watch?v=IgFQrN4MfmI"
+        codeLink: 'portfolio/01'
     }
 ];

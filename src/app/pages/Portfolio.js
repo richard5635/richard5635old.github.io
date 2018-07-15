@@ -27,6 +27,17 @@ const PortfolioGrid = styled.div`
   padding-bottom: 0px;
   display: grid;
   flex-wrap: wrap;
+  grid-auto-rows : 600px;
+  @media (max-width: 768px) {
+    grid-template-columns : 100%;
+  }
+  @media (min-width: 768px) and (max-width: 960px) {
+    grid-template-columns : 50% 50%;
+  }
+  @media (min-width: 961px) {
+    grid-template-columns : 1fr 1fr;
+  }
+
 `
 const HeaderWrap = styled.div`
     padding-left: 16px;
@@ -42,7 +53,6 @@ const HeaderWrap = styled.div`
 
 const PortfolioItem = styled(Link)`
   background: gray;
-  display: inline-grid;
   width: 100%;
   transition: opacity .25s ease-in-out;
   object-fit:cover;
@@ -53,59 +63,15 @@ const PortfolioItem = styled(Link)`
   }
 
   @media (max-width: 767px) {
-    height:500px;
-    margin-right:0px;
-    margin-left:0px;
-    &:nth-child(n+2) {
-      margin-top: 0px;
-    }
+    /* height:500px; */
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    width: calc(50%);
-    height: calc(50%);
-    margin-bottom: 0px;
-    height:600px;
-
-    &:nth-child(odd) {
-      margin-right: 0px;
-    }
-
-    &:nth-child(even) {
-      margin-left: 0px;
-    }
-
-    &:nth-child(n+3) {
-      margin-top: 0px;
-    }
+    /* height:600px; */
   }
 
   @media (min-width: 992px) {
-    width: calc(33.33333%);
-    height: 700px;
-
-    &:first-child,
-    &:nth-child(4),
-    &:nth-child(7) {
-      margin-right: 0px;
-    }
-
-    &:nth-child(2),
-    &:nth-child(4),
-    &:nth-child(8), {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-
-    &:nth-child(3),
-    &:nth-child(6),
-    &:last-child {
-      margin-left: 0px;
-    }
-
-    &:nth-child(n+4) {
-      margin-top: 0px;
-    }
+    /* height: 300px; */
   }
 `
 
@@ -124,28 +90,19 @@ const cardList = workDataArray.map((item, index) =>{
 export default class Portfolio extends React.Component {
     render() {
         return (
-            <PortfolioWrapper>
-                <Container>
-                      <SubContentWrapper>
+            <ContentWrapper>
+                <SubContentWrapper>
                     <Heading>Hi there!
                       <br/>I'm Richard, 
                       <br/>A student aiming to be a UX Engineer.
                     </Heading>
-                    
                     <Text>My works are presented below. You can tap the image to see details about them.</Text>
-                    </SubContentWrapper>
-                    
-
                     <MidLimiter><AwesomeIcon icon="angle-double-down" /></MidLimiter>
+                </SubContentWrapper>
 
-                    <PortfolioGrid>
-                        {cardList}
-                    </PortfolioGrid>
-                    
-                    <Heading></Heading>
+                <PortfolioGrid>{cardList}</PortfolioGrid>
 
-                </Container>
-            </PortfolioWrapper>
+            </ContentWrapper>
         )
     }
 }

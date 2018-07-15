@@ -176,11 +176,12 @@ Leviopole itself has the shape of a long pole with two larger ends, giving it a 
 
                         <div class="row">
                             <div class="col">
-                            <IFrameWrapper>
-                                
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/SJfZnC4kHrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                </IFrameWrapper>
+                            <IFrameWrapper>        
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SJfZnC4kHrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Qh3SDRaOR_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </IFrameWrapper>
                             </div>
+                            
 
                         </div>
                         

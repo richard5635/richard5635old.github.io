@@ -7,13 +7,11 @@ import {Link} from 'react-router-dom'
 import Logo from './../assets/images/Logo01.png'
 
 const Header = styled.header`
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 999;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 16px;
 `
 
 const NavWrapper = styled.nav`
@@ -67,6 +65,8 @@ const NavLabel = styled.ul`
 
 const NavText = styled.ul `
   justify-content: flex-start;
+  font-size: 24px;
+  font-weight: bold;
   margin:0;
   padding-left:0px;
   list-style-type: none;
@@ -96,7 +96,6 @@ const NavItem = styled.li`
 
   a {
     font-size: 16px;
-    font-weight: bold;
     text-decoration: none;
     color: #000;
     transition: color .15s ease-in-out;
@@ -109,7 +108,6 @@ const NavItem = styled.li`
 
 const NavButton = styled.button`
   padding: 8px 12px;
-  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -151,7 +149,7 @@ export default class Nav extends React.Component {
                 <NavWrapper isOpen={this.state.show}>
                     <NavButton onClick={this.toggleMenu}><LogoWrapper src={Logo}/></NavButton>
                     <NavText>
-                        RICHARD HARTANTO
+                        Richard Hartanto
                     </NavText>
                     <NavLabel>
                       <Link to="/"><LogoWrapper src={Logo}/></Link>

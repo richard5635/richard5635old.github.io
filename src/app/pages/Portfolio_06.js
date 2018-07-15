@@ -26,7 +26,7 @@ import { ContentWrapper, SubContentWrapper, HeaderImage, HeaderImageWrapper,Text
 
 
 
-export default class Portf07 extends React.Component {
+export default class Portf06 extends React.Component {
     render() {
         return (
             <ContentWrapper>
@@ -92,11 +92,9 @@ export default class Portf07 extends React.Component {
                                 </Text>
                             </div>
                         </TextRow>
-
-                        
                     </div>
-                    
                 </SubContentWrapper>
+
             </ContentWrapper>
         );
     };
